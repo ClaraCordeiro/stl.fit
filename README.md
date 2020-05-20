@@ -13,7 +13,7 @@ the best fit using RMSE, the argument k = 2 was provided; alternatively, accurac
 
 fit<-stl.fit(y, k, rob)
 
-Arguments: 
+**Arguments:** 
 
 y: time series
 
@@ -23,7 +23,7 @@ rob: TRUE/FALSE    # perform an outliers inspection and set the "rob" argument a
  
 
 
-output example
+**output:**
  
 fit$measure to access the value of RMSE (or other)
  

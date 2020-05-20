@@ -13,7 +13,7 @@ The procedure starts by setting a benchmark model ``stl(time series, s.window = 
 
 fit<-stl.fit(y, k, rob)
 
-**Arguments:** 
+**input:** 
 
 y: time series
 

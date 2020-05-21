@@ -29,4 +29,4 @@ fit$measure to access the value of the error measure used
  
 fit$stlfit in common with the R function stl() 
 
-example: use fit$stlfit$time.series[,"seasonal"] to access the seasonal component, for example
+example: use fit$stlfit$time.series[,"seasonal"] to access the seasonal component

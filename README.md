@@ -11,22 +11,23 @@ The procedure starts by setting a benchmark model ``stl(time series, s.window = 
 > install.packages('forecast')
 ```
 
-fit<-stl.fit(y, k, rob)
+`fit<-stl.fit(y, k, rob)`
 
 **input:** 
 
-y: time series
+`y`: time series
 
-k: is an integer; example, k=2 for RMSE, k=1 for ME, k=3 for MAE ...use accuracy() function from package forecast
+`k`: is an integer; example, k=2 for RMSE, k=1 for ME, k=3 for MAE ...use accuracy() function from package forecast
  
-rob: TRUE/FALSE    # perform an outliers inspection and set the "rob" argument accordingly to the analysis
+`rob`: TRUE/FALSE  # perform an outliers inspection and set the "rob" argument accordingly to the analysis
  
-
 
 **output:**
  
-fit$measure to access the value of the error measure used
+`fit$measure` to access the value of the error measure used
  
-fit$stlfit in common with the R function stl() 
+`fit$stl` in common with the R function stl() 
 
-example: use fit$stlfit$time.series[,"seasonal"] to access the seasonal component
+example: use `fit$stl$time.series[,"seasonal"]` to access the seasonal component
+
+Remark: The `stl.fit()` function was updated on June 2023 and now executes more quickly. The computational work was performed by Sara V. Domingos (CEAUL Grant UIDP/00006/2020 funded by Fundação para a Ciência e a Tecnologia) and Celestino Coelho (DM-FCT,UAlg).
